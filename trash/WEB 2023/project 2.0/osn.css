@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Century Gothic"),
+         /* Если не получилось, загрузит woff2 */
+         url("/fonts/centurygothic.ttf") format("ttf"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         /* url("/fonts/roboto.woff") format("woff"); */
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    font-family: "Century Gothic", "Arial", sans-serif;
+}
+.buttons{
+    display: flex;
+    color: white;
+}
+.header{
+    display: flex; 
+    justify-content: space-between;
+}
+.but{
+    margin-top: 25px;
+    margin-right: 50px;
+    position: relative; 
+}
+.but::after { 
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    bottom: 50px; 
+    width: 100%; 
+    height: 2px; 
+    background-color: #fff; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease-in-out; 
+} 
+   
+.but:hover::after { 
+    transform: scaleX(1); 
+}
+.men{
+    display: none;
+    margin-top: 20px;
+    width: 65px;
+    margin-right: 40px;
+}
+.logo{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.content{
+    width: 1400px;
+}
+.i{
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-right: 50px;
+    border: solid black 1px;
+    background: white;
+    height: 33px;
+    width: 98px;
+    text-align: center;
+    padding-top: 6px;
+    color: black;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.logIn{
+    flex-direction: column;
+    position:fixed;
+    width: 700px;
+    height: 700px;
+    background-color:transparent;
+    backdrop-filter:blur(15px);
+    margin-top: 150px;
+    z-index: 1;
+    border-radius: 60px;
+    justify-content: center;
+    align-items: center;
+    border: solid #fff 1px;
+    font-family: 'Audiowide', cursive;
+    display: none;
+}
+input{
+    border: none;
+    height: 50px;
+    width: 400px;
+    font-size: 30px;
+    margin-bottom: 50px;
+    background: transparent;
+    border-bottom: solid #fff;
+    outline: none;
+}
+.lgnBtn{
+    font-size: 30px;
+    height: 50px;
+    width: 200px;
+    border-radius: 50px;
+    border: none;
+}
+.close{
+    position: absolute;
+    font-size: 50px;
+    margin-left: 620px;
+    margin-bottom: 620px;
+    cursor: pointer;
+    height:50px;
+    width: 50px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    color: #fff;
+}
+h2{
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+label{
+    position: absolute;
+    margin-top: -80px;
+    display: flex;
+    justify-content:left;
+    transition: 0.2s;
+    pointer-events: none;
+}
+input:focus ~ label{
+    margin-top: -120px;
+}
+.lgn-active{
+    display: flex;
+}
+@media screen and (max-width:780px){
+    .content{
+        width: 520px;
+    }
+    .i{
+        margin-left: 55px;
+        margin-top: 10px;
+        margin-right: 18px;
+        height: 15px;
+        width: 40px;
+        padding-top: 1px;
+        font-size: 9px;
+    }
+}

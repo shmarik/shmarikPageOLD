@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="filter-container">
+      <label for="type-select">Тип:</label>
+      <select id="type-select">
+        <option value="all">Все</option>
+        <option value="anemo">Анемо</option>
+        <option value="Пиро">Пиро</option>
+        ...
+      </select>
+      <label for="rank-select">Rank:</label>
+      <select id="rank-select">
+        <option value="all">Все</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        ...
+      </select>
+      <label for="stat-select">Stat:</label>
+      <select id="stat-select">
+        <option value="all">Все</option>
+        <option value="hp">HP</option>
+        <option value="atk">ATK</option>
+      </select>
+      <button id="filter-button">Фильтровать</button>
+    </div>
+
+    <div id="character-container"></div>
+
+    <script src="data.js"></script>
+    <script src="js.js"></script>
+  </body>
+</html>

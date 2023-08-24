@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <style>
+      .calculator {
+  width: 300px;
+  height: 300px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.calculator-button {
+  width: 50px;
+  height: 50px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+        <div class="calculator-button">
+      <input type="text" id="display" />
+      <div>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>/</button>
+      </div>
+      <div>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>*</button>
+      </div>
+      <div>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>-</button>
+      </div>
+      <div>
+        <button>0</button>
+        <button>.</button>
+        <button>=</button>
+        <button>+</button>
+      </div>
+    </div>
+    </div>
+    <script>
+      let display = document.getElementById('display');
+let buttons = document.querySelectorAll('button');
+let operators = ['+', '-', '*', '/'];
+let decimalAdded = false;
+
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', function(e) {
+    let btnVal = this.innerHTML;
+    let btnText = display.value;
+
+    if (btnVal == 'C') {
+      display.value = '';
+      decimalAdded = false;
+    } else if (btnVal == '=') {
+      let equation = btnText;
+      let lastChar = equation[equation.length - 1];
+
+      equation = equation.replace(/x/g, '*').replace(/÷/g, '/');
+
+      if (operators.indexOf(lastChar) > -1 || lastChar == '.')
+        equation = equation.replace(/.$/, '');
+
+      if (equation)
+        display.value = eval(equation);
+
+      decimalAdded = false;
+    } else if (operators.indexOf(btnVal) > -1) {
+      let lastChar = btnText[btnText.length - 1];
+
+      if (btnText != '' && operators.indexOf(lastChar) == -1)
+        display.value += btnVal;
+
+      decimalAdded = false;
+    } else if (btnVal == '.') {
+      if (!decimalAdded) {
+        display.value += btnVal;
+        decimalAdded = true;
+      }
+    } else {
+      display.value += btnVal;
+    }
+  });
+}
+    </script>
+  </body>
+</html>

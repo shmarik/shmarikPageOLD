@@ -1,0 +1,137 @@
+<html>
+  <head>
+    <title>Ping Pong</title>
+  </head>
+  <body>
+    <canvas id="game">
+      <div id="paddle1">
+        <div id="paddle2">
+        </div>
+      </div>
+    </canvas>
+    <script>// Get the canvas element
+        var canvas = document.getElementById("game");
+        
+        // Get the context of the canvas
+        var ctx = canvas.getContext("2d");
+        
+        // Set the width and height of the canvas
+        ctx.canvas.width = window.innerWidth;
+        ctx.canvas.height = window.innerHeight;
+        
+        // Create the paddles
+        var paddle1 = {
+          x: 0,
+          y: 0,
+          width: 10,
+          height: 100,
+          speed: 20
+        };
+        
+        var paddle2 = {
+          x: canvas.width - 10,
+          y: 0,
+          width: 10,
+          height: 100,
+          speed:20
+        };
+        
+        // Create the ball
+        var ball = {
+          x: canvas.width / 2,
+          y: canvas.height / 2,
+          radius: 10,
+          speed: 5,
+          velocityX: 5,
+          velocityY: 5
+        };
+        
+        // Draw the paddles
+        function drawPaddle1() {
+          ctx.fillStyle = "#0095DD";
+          ctx.fillRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height);
+        }
+        
+        function drawPaddle2() {
+          ctx.fillStyle = "#0095DD";
+          ctx.fillRect(paddle2.x, paddle2.y, paddle2.width, paddle2.height);
+        }
+        
+        // Draw the ball
+        function drawBall() {
+          ctx.beginPath();
+          ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
+          ctx.fillStyle = "#0095DD";
+          ctx.fill();
+          ctx.closePath();
+        }
+        
+        // Move the paddles
+        function movePaddle1() {
+          if (paddle1.y < 0) {
+            paddle1.y = 0;
+          } else if (paddle1.y + paddle1.height > canvas.height) {
+            paddle1.y = canvas.height - paddle1.height;
+          }
+        }
+        
+        function movePaddle2() {
+          if (paddle2.y < 0) {
+            paddle2.y = 0;
+          } else if (paddle2.y + paddle2.height > canvas.height) {
+            paddle2.y = canvas.height - paddle2.height;
+          }
+        }
+        
+        // Move the ball
+        function moveBall() {
+          ball.x += ball.velocityX;
+          ball.y += ball.velocityY;
+        
+          // Wall collision (right/left)
+          if (ball.x + ball.radius > canvas.width || ball.x - ball.radius < 0) {
+            ball.velocityX = -ball.velocityX;
+          }
+        
+          // Wall collision (top/bottom)
+          if (ball.y + ball.radius > canvas.height || ball.y - ball.radius < 0) {
+            ball.velocityY = -ball.velocityY;
+          }
+        
+          // Paddle collision
+          if (
+            ball.x - ball.radius < paddle1.x + paddle1.width &&
+            ball.x + ball.radius > paddle1.x &&
+            ball.y + ball.radius > paddle1.y &&
+            ball.y - ball.radius < paddle1.y + paddle1.height
+          ) {
+            ball.velocityX = -ball.velocityX;
+          }
+        
+          if (
+            ball.x + ball.radius > paddle2.x &&
+            ball.x - ball.radius < paddle2.x + paddle2.width &&
+            ball.y + ball.radius > paddle2.y &&
+            ball.y - ball.radius < paddle2.y + paddle2.height
+          ) {
+            ball.velocityX = -ball.velocityX;
+          }
+        }
+        
+        // Draw everything
+        function draw() {
+          // Clear the canvas
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+          drawPaddle1();
+          drawPaddle2();
+          drawBall();
+        
+          moveBall();
+        
+          requestAnimationFrame(draw);
+        }
+        
+        draw();</script>
+  </body>
+</html>

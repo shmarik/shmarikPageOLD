@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Kanit', sans-serif;
+    }
+    div{
+        color: white;
+    }
+    body{
+        background-color: #0b0a14;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .content{
+        border: solid white 1px;
+        width:560px;
+        height:670px;
+    }
+    .gas{
+        border: solid white 1px;
+        width: 360px;
+        height: 370px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .content-2{
+        display: flex;
+    }
+    .wires{
+        border: solid white 1px;
+        width: 198px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around; 
+    }
+    .pressure{
+        height: 100px;
+        border: solid white 1px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; 
+    }
+    .result{
+        display: flex;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        border: solid white 1px;
+    }
+    .reset-btn{
+        display: flex;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        cursor: pointer;
+    }
+    .b1{
+        border: solid #393a43 5px;
+        width: 353px;
+        height: 85px;
+    }
+    .b2{
+        border: solid #393a43 5px;
+        width: 191px;
+        height: 85px;
+    }
+    .b3{
+        border: solid #253421 5px;
+        height: 93px;
+        width: 182px;
+    }
+    .b3:hover{
+        border: solid #458120 5px;
+    }
+    .b1:hover , .b2:hover{
+        border: solid #fff 5px;
+    }
+    .btn{
+        text-align: center;
+        font-size: 57px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="content">
+        <div class="content-2">
+            <div class="gas">
+                <div class="b1 btn" onclick="button('gas' , '')">???</div>
+                <div class="b1 btn" onclick="button('gas' ,'nitrogen')">Nitrogen</div>
+                <div class="b1 btn" onclick="button('gas' , 'detranium')">Detranium</div>
+                <div class="b1 btn" onclick="button('gas' , 'helium')">Helium</div>
+            </div>
+            <div class="wires">
+                <div class="b2 btn" onclick="button('wires' , '')">???</div>
+                <div class="b2 btn" onclick="button('wires' , 1)">H</div>
+                <div class="b2 btn" onclick="button('wires' , 2)">2 x H</div>
+                <div class="b2 btn" onclick="button('wires' , 3)">3 x H</div>
+            </div>
+        </div>
+            <div class="pressure">
+                <div class="b3 btn" onclick="button('pressure' , '')">???</div>
+                <div class="b3 btn" onclick="button('pressure' , 57)">≥5783</div>
+                <div class="b3 btn" onclick="button('pressure' , 58)">≤5812</div>
+            </div>
+            <div class="result">1,2,3,4,5,6,7,8,9,10,11,12</div>
+            <div class="reset-btn" onclick="reset()">RESET</div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>

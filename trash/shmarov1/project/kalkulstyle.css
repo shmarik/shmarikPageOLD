@@ -1,0 +1,66 @@
+body{
+    background-color: gray;
+}
+.body{
+    background-color: darkgrey;
+    width: 1000px;
+    height: 820px;
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    border-radius: 20px;
+}
+.tablo{
+    background-color: white;
+    height: 70px;
+    width: 900px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 2px;
+    
+}
+.cifri{
+    padding-top: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.button {
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 2px;
+}
+.s1{
+    margin-left: 50px;
+}
+.s2{
+    margin-left: 275px;
+}
+.s3{
+    margin-left: 500px;
+}
+.s4{
+    margin-left: 725px;
+}
+.btnC{
+    margin-left: 50px;
+    margin-top: 5px;
+}
+.btnSk{
+    margin-left: 275px;
+    margin-top: -708px;
+}
+.btnPr{
+    margin-left: 500px;
+    margin-top: -708px;
+}
+.btnPl{
+    margin-left: 725px;
+    margin-top: -708px;
+}

@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+td, th {
+    background:rgb(45, 45, 92); /* Цвет фона ячеек */
+    padding: 5px; /* Поля вокруг текста */
+   }
+
+   .pizsa {
+    margin-top: 10px;
+    -webkit-box-shadow: 0px -11px 42px -2px rgba(34, 60, 80, 0.58);
+    -moz-box-shadow: 0px -11px 42px -2px rgba(34, 60, 80, 0.58);
+    box-shadow: 0px -11px 42px -2px rgba(34, 60, 80, 0.58);
+}
+
+input{
+    margin: 5px;
+    width: 120px;
+}
+
+table {
+    width: 100%; /* Ширина таблицы */
+    background: white; /* Цвет фона таблицы */
+    color: white; /* Цвет текста */
+    border-spacing: 1px; /* Расстояние между ячейками */
+   }
+
+
+.bodyst {
+    background: gray;
+}
+.div{
+    background-color: rgb(216, 216, 216);
+    border-radius: 20px;
+    border: 1px solid black;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2) inset;
+}
+.c{
+    width: 800px;
+    height: 900px;
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: 10px;
+    padding: 10px;
+}
+header{
+    background-color: black;
+    border-radius: 10% 10% 6% 4% / 0% 0% 25% 41% ;
+    box-shadow: 0px 15px 12px 0px rgba(0, 0, 0, 0.2);
+    height: 100px;
+}
+.car{
+    height: 80px;
+    margin-top: 3px;
+}
+.ico{
+    border: 0px;
+    margin-left: 20px;
+}

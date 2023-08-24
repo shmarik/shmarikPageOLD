@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+body{
+    background-color: gray;
+    font-family: 'Audiowide', cursive;
+}
+.div{
+    background-color: rgb(216, 216, 216);
+    border-radius: 20px;
+    border: 1px solid black;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2) inset;
+}
+.body{
+    width: 1000px;
+    height: 900px;
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    margin-left: -500px;
+    margin-top: -450px;
+}
+.tablo{
+    background-color: white;
+    height: 140px;
+    width: 900px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: solid black;
+}
+
+.deystv{
+    padding-top: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+    color: rgba(0,0,0,0.4)
+}
+.gotovo{
+    padding-top: 15px;
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+.button{
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    width: 222px;
+    height: 140px;
+    margin-bottom: 5px;
+    outline: none;
+    font-family: 'Audiowide' ;
+    -webkit-box-shadow: 0px 3px 0px 0px #212121;
+    -moz-box-shadow: 0px 3px 0px 0px #212121;
+    box-shadow: 0px 3px 0px 0px #212121;;
+    background: rgb(107, 107, 107);
+    color: white;
+}
+button:active {
+    transform: translateY(2px);
+  }
+.buttons{
+    margin-left: 50px;
+    margin-top: 5px;
+}
+.c{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    margin-left: -300px;
+    margin-top: -300px;
+}
+.lyatori{
+    margin-left: 50px;
+    margin-top: 20px;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    border: solid black 2px;
+    border-radius: 5px;
+    padding: 2px;
+}

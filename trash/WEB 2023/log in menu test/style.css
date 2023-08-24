@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:url(image.jpg);
+    background-repeat: no-repeat; 
+    background-size:100%;
+    display: flex;
+    justify-content: center;
+}
+.logIn{
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    width: 700px;
+    height: 700px;
+    background-color:transparent;
+    backdrop-filter:blur(15px);
+    margin-top: 150px;
+    z-index: 1;
+    border-radius: 60px;
+    justify-content: center;
+    align-items: center;
+    border: solid #fff 1px;
+    font-family: 'Audiowide', cursive;
+}
+input{
+    border: none;
+    height: 50px;
+    width: 400px;
+    font-size: 30px;
+    margin-bottom: 50px;
+    background: transparent;
+    border-bottom: solid #fff;
+    outline: none;
+}
+.lgnBtn{
+    font-size: 30px;
+    height: 50px;
+    width: 200px;
+    border-radius: 6px;
+}
+.close{
+    position: absolute;
+    font-size: 50px;
+    margin-left: 620px;
+    margin-bottom: 620px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 0px 11px 6px rgba(0, 0, 0, 0.26);
+    height:50px;
+    width: 50px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+h2{
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+label{
+    position: absolute;
+    margin-top: -80px;
+    display: flex;
+    justify-content:left;
+    transition: 0.2s;
+    pointer-events: none;
+}
+input:focus ~ label{
+    margin-top: -120px;
+}

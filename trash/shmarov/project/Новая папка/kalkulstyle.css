@@ -1,0 +1,70 @@
+body{
+    background-color: gray;
+}
+.body{
+    background-color: darkgrey;
+    width: 1000px;
+    height: 900px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    border-radius: 20px;
+}
+.tablo{
+    background-color: white;
+    height: 140px;
+    width: 900px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.deystv{
+    padding-top: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+    color: rgba(0,0,0,0.4)
+}
+.gotovo{
+    padding-top: 15px;
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+.button {
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border: 2px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 2px;
+}
+.s1{
+    margin-left: 50px;
+}
+.s2{
+    margin-left: 275px;
+}
+.s3{
+    margin-left: 500px;
+}
+.s4{
+    margin-left: 725px;
+}
+.btnC{
+    margin-top: 5px;
+}
+.btnSk{
+    margin-top: -728px;
+}
+.btnPr{
+    margin-top: -728px;
+}
+
+.btnPl{
+    margin-top: -728px;
+}

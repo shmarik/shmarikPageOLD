@@ -1,0 +1,266 @@
+body{
+    background-color: gray;
+}
+.body{
+    background-color: darkgrey;
+    width: 1000px;
+    height: 820px;
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    border-radius: 20px;
+}
+.tablo{
+    background-color: white;
+    height: 70px;
+    width: 900px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 2px;
+    
+}
+.cifri{
+    padding-top: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.btn1{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 50px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.btn2{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 275px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.btn3{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 500px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.btn4{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 50px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.btn5{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 275px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.btn6{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 500px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.btn7{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 50px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.btn8{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 275px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.btn9{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 500px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.btn0{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 275px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.btnC{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 50px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.btnSk{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 275px;
+    margin-top: -708px;
+    cursor: pointer;
+}
+.btnMn{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 725px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.btnPl{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 725px;
+    margin-top: -708px;
+    cursor: pointer;
+}
+.btnYm{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 725px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.btnR{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 725px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.btnD{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 725px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.btnPM{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 50px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.btnPr{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 500px;
+    margin-top: -708px;
+    cursor: pointer;
+}
+.btnZ{
+    background-color: gray;
+    font-size: 40px;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 7px;
+    margin-left: 500px;
+    margin-top: 2px;
+    cursor: pointer;
+}

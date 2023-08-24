@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>ГЛАВНАЯ</title>
+</head>
+<body>
+    <!--! логин меню (по дефолту скрыто) -->
+    <div class="login-cont">
+    <div class="logIn">
+        <h2>LOGIN</h2>
+        <div class="inp-box">
+            <input><label for="">MAIL</label>
+        </div>
+        <div class="inp-box">
+            <input><label for="">PASSWORD</label>
+        </div>
+        <button class="lgnBtn">Log In</button>
+        <span class=close></span>
+    </div>
+  </div>
+    <!--! Cоздал контейнер контент-->
+    <div class="content">
+        <!-- ! Див с классом bg для заднего фона -->
+        <div class="bg">
+            <!--! header для десктопа -->
+            <header class="header-for-pc">
+
+            <div class="nav-menu">
+                <div class="logo"><img src="images/logo.png" alt=""></div> 
+                <div class="nav-buttons">
+                     <div class="but"><a href="">ДОМОЙ</a></div>
+                     <div class="but"><a href="pages/uprajhneniya/upr.html">УПРАЖНЕНИЯ</a></div>
+                     <div class="but"><a href="pages/video/vid.html">ПИТАНИЕ</a></div>
+                     <div class="but"><a href="pages/test/testpage.html">ТЕСТ</a></div>
+                     <div class="log-in" onclick="createLogInMenu()">ВОЙТИ</div>
+                </div>
+            </div>
+            <!--! header для телефонов -->
+            </header>
+            <header class="header-for-phone">
+                <div class="logo"><img src="images/logo.png" alt="" class="r"></div>
+                <div class="burger-nav-and-burger">
+                    <ul class="burger-nav">
+                        <li><a href="" class="nav-el"><img src="images/home.png" alt="" class="but-ico"> ДОМОЙ</a></li>
+                        <li><a href="pages/uprajhneniya/upr.html" class="nav-el"><img src="images/upr.png" alt="" class="but-ico">УПРАЖНЕНИЯ</a></li>
+                        <li><a href="pages/video/vid.html" class="nav-el"><img src="images/video.png" alt="" class="but-ico">ПИТАНИЕ</a></li>
+                        <li><a href="pages/test/testpage.html"  class="nav-el"> <img src="images/test.png" alt="" class="but-ico"> ТЕСТ</a></li>
+                    </ul>
+                    <div class="log-in unselectable" onclick="createLogInMenu()">ВОЙТИ</div>
+                </div>
+            </header>
+            <!--! основа лендинга -->
+            <div class="main">
+              <div class="text-tren">тренировки<span class="green">.</span></div>
+                <div class="na4alo">
+                  <p>⬜️ Главное </p>
+                  <p class="n">начать</p>
+                </div>
+                <!-- ! green-cerkle это мужик в кружке -->
+                <div class="m-c">
+                  <div class="green-cerkle"><img src="images/image.png" alt="" class="muzh"></div>
+                </div>
+                <div class="r-r">
+                <div class="rightbar"> <!-- ! все что с права под хедером-->
+                  <!-- ! кнопка советы новичкам -->
+                  <div class="sovbtn"> 
+                    советы <br> новичкам
+                  </div>
+                  <div> <!--! див с кнопками и текстом, под кнопкой "советы новичкам" -->
+                      <div class="inf">
+                        <p style="left: 1px;"><h1>ЗОЖ -<br>здоровый<br>образ <br>жизни</h1></p>
+                        <p style="margin-top: 10px;">Наш сайт о здоровом образе жизни <br> поможет вам найти все необходимые <br> сведения о правильном питании и <br> физических  упражнениях</p>
+                      </div>
+                      <div class="cn">
+                        <div class="na4">НАЧАТЬ</div>
+                        <div class="yzn">УЗНАТЬ БОЛЬШЕ</div>
+                      </div>
+                  </div>
+                    <!-- ! СТИЛИ ДЛЯ ПОКАЗА/СКРЫТИЯ БЛОКА igarett 15/03/2023 -->
+                    <div id="toggle-btn" class="cnopka unselectable">БОЛЬШЕ</div>
+                    <!-- ! igarett 15/03/2023 -->
+
+                </div>
+
+                <!-- ! СТИЛИ ДЛЯ ПОКАЗА/СКРЫТИЯ БЛОКА igarett 15/03/2023 -->
+                <div id="content">
+                  <div class="infa">
+                    <p style="left: 1px;"><h1 style="font-size: 15px; color: white;">ЗОЖ - здоровый<br>образ <br>жизни</h1></p>
+                    <p style="margin-top:10px; font-size: 10px; color: white;">Наш сайт о здоровом образе жизни <br> поможет вам найти все необходимые сведения о <br> правильном питании и физических  упражнениях</p>
+                  </div>
+                  <div class="cnopki">
+                    <div class="na4">НАЧАТЬ</div>
+                    <div class="yzn">УЗНАТЬ БОЛЬШЕ</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="vstavka"> <!--! вставка со словами "начни и проверь себя"-->
+            <h1 class="vst-txt"> 
+                <span class="green"> начни </span>и проверь себя
+            </h1>
+        </div>
+        <!--! предпоследняя часть лендинга -->
+
+        <div class="breaks"> <!--! контейнер с плитками  -->
+
+            <div class="break1"> <!--! плиточка-->
+              <div class="photo">
+                <img src="images/1.jpg" width="512px" alt="" srcset="">
+              </div> <!--! фото плиточки-->
+              <div class="t-inf"> <!--! инфа плиточки-->
+                <p> <span class="green inf-gl"> ВВОДНЫЙ </span> из названия, 
+                  цель такого материала — 
+                  максимально полно 
+                  информировать пользователя 
+                  о том, что представляет 
+                  собой конкретный сайт. 
+                  естественно, материал также 
+                  может быть оптимизирован,
+                </p>
+              </div>
+            </div>
+
+            <div class="break2"> <!--! плиточка-->
+              <div class="photo">
+                <img src="images/2.jpg" width="512px" alt="" srcset="">
+              </div> <!--! фото плиточки-->
+              <div class="t-inf"> <!--! инфа плиточки-->
+                <p >
+                  <span class="green inf-gl">ПРОДВИНУТЫЙ</span> из названия, 
+                  цель такого материала —  
+                  максимально полно. 
+                  информировать пользователя 
+                  о том, что представляет 
+                  собой конкретный сайт. 
+                  естественно, материал также 
+                  может быть оптимизирован
+                </p>
+              </div>
+            </div>
+
+            <div class="break1"> <!--! плиточка-->
+              <div class="photo">
+                <img src="images/3.jpg" width="512px" alt="" srcset="">
+              </div> <!--! фото плиточки-->
+              <div class="t-inf"> <!--! инфа плиточки-->
+                <p >
+                  <span class="green inf-gl">УГЛУБЛЕННЫЙ</span> из названия, 
+                  цель такого материала — 
+                  максимально полно. 
+                  информировать пользователя 
+                  о том, что представляет 
+                  собой конкретный сайт. 
+                  естественно, материал также
+                  может быть оптимизирован,
+                </p>
+              </div>
+            </div>
+            
+          </div>
+
+          <footer class="fu"><span class="green">ЧТО</span> НУЖНО <br> ДЛЯ НАЧАЛА</footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

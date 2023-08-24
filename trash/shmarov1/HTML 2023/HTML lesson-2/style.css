@@ -1,0 +1,37 @@
+div{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+.div1{
+    background-color: aqua;
+}
+.div2{
+    background-color: pink;
+    position: absolute;
+    left: 300px;
+    top: 0px;
+
+}
+.div3{
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 600px;
+    top: 0px;
+}
+.div4{
+    background-color: chartreuse;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+.container{
+    background-color: blanchedalmond;
+    width: 1200px;
+    height: 1200px;
+    border: solid black;
+    position: relative;
+    left: 50px;
+    top: 100px;
+}

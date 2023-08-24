@@ -1,0 +1,36 @@
+body{
+    background-color: grey;
+}
+.profile{
+    background-color: black;
+    width: 450px;
+    height: 800px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.profileImage{
+    width: 400px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.btn2 {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+div{
+    background-color: black;
+}
+
+.btn{
+    background-color: white;
+    border: solid black;
+    margin: 20px;
+}
+
+.nfa{
+    padding-top: 20px;
+    height: 50px;
+    width: 200px;
+}

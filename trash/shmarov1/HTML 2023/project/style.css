@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+}
+.buttons{
+    display: flex;
+    color: white;
+}
+.header{
+    display: flex; 
+    justify-content: space-between;
+    /* width: 1700px; */
+}
+.but{
+    margin-top: 25px;
+    margin-right: 50px;
+}
+
+.men{
+    width: 65px;
+}
+.i{
+    margin-left: 150px;
+}
+.t{
+    color: white;
+    transform: rotate(-90deg);
+    width: 100px;
+    margin-top: 500px;
+    font-size: 50px;
+}
+.content{
+    width: 1400px;
+}
+.green-dot{
+    font-size: 50px;
+    color: 	#3daa3d;
+}
+.bg{
+    background-image:url(bg.png); 
+    background-repeat: no-repeat; 
+    height: 879px;
+    border-bottom: solid white;
+}
+.green-cerkle{
+    border: solid #3daa3d	;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    background-color: #3daa3d;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: 150px;
+    margin-top: 250px;
+    align-items: center;
+}
+.muzh{
+    width: 418px;
+    height: 632px;
+    position:absolute;
+}
+.main{
+    display: flex;
+}
+.na4alo {
+    color: white;
+    font-size: 30px;
+    margin-top: 480px;
+    margin-left: 70px;
+}
+.n{
+    margin-left: 90px;
+}
+.muzh-container{
+    width: 418px;
+    height: 632px;
+}

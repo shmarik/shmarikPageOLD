@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "Century Gothic";
+    font-style:normal;
+    font-weight: 400;
+    src: local("Century Gothic"),
+    url("/fonts/centurygothic_bold.ttf") format("ttf"),
+}
+.t{
+    color: white;
+    transform: rotate(-90deg);
+    width: 100px;
+    margin-top: 500px;
+    font-size: 50px;
+    margin-left: 70px;
+}
+.green{
+    color: 	#3daa3d;
+}
+.bg{
+    background-image:url(bg.png); 
+    background-repeat: no-repeat; 
+    height: 879px;
+    border-bottom: solid white;
+}
+.green-cerkle{
+    border: solid #3daa3d	;
+    border-radius: 50%;
+    height: 432px;
+    width: 432px;
+    background-color: #3daa3d;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: 150px;
+    margin-top: 200px;
+    z-index: 0;
+}
+.muzh{
+    width: 418px;
+    height: 632px;
+    position: relative;
+    margin-top: -60px;
+}
+.main{
+    display: flex;
+}
+.na4alo {
+    color: white;
+    font-size: 30px;
+    margin-top: 480px;
+}
+.n{
+    margin-left: 90px;
+}
+.inf{
+    color: white;
+    margin-left: 90px;
+    margin-top: 50px;
+    font-family: "Century Gothic", "Arial", sans-serif;
+}
+.sovbtn{
+    color: white;
+    border-bottom: solid white;
+    border-top: solid white;
+    border-left: solid white;
+    width: 190px;
+    height: 103px;
+    margin-left: 290px;
+    font-size: 35px;
+    padding-left: 20px;
+}
+.rightbar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+.cn{
+    color: white;
+    display: flex;
+    margin-left:90px ;
+    margin-top: 30px;
+}
+.na4{
+    background: #3daa3d;
+    width: 125px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.yzn{
+    margin-left: 20px;
+    width: 150px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pover{
+    border-bottom: solid white;
+    width: 1400px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo{
+    margin-top: 100px;
+    width: 593px;
+    height: 567px;
+    border: solid white;
+}
+.break1{
+    display: flex;
+    margin-left: 80px;
+}
+.break2{
+    margin-top: 100px;
+    display: flex;
+    flex-direction:row-reverse ;
+    margin-right: 80px;
+}
+.t-inf{
+    color: white;
+    font-size: 35px;
+    display: flex;
+    margin-left: 40px;
+    align-items: center;
+}
+.d{
+    margin-right: 80px;
+}
+.breaks{
+    padding-bottom: 100px;
+    border-bottom: solid white;
+}
+.fu{
+    color: white;
+    font-size: 200px;
+    text-align: center;
+}
+@media screen and (max-width:780px){
+    .bg{
+        background-size: 520px;
+    }
+    .muzh{
+        width: 155px;
+        height: 234px;
+        position: relative;
+        margin-top: -22px;
+    }
+    .green-cerkle{
+        height: 155px;
+        width: 155px;
+        margin-left: 55px;
+        margin-top: 74px;
+    }
+    .t{
+        height: 132px;
+        width: 37px;
+        margin-top: 150px;
+        font-size: 18px;
+        /* margin-left: 26px; */
+    }
+    .na4alo {
+        font-size: 11px;
+        margin-top: 177px;
+    }
+    .n{
+        margin-left: 33px;
+    }
+    .but{
+        margin-top: 9px;
+        margin-right: 18px;
+        font-size: 11px;
+    }
+    .but::after { 
+        bottom: 20px; 
+        width: 100%; 
+        height: 1px; 
+    } 
+    .logo{
+        margin-top: 7px;
+        margin-left: 11px;
+        width: 28px ;
+    }
+    .sovbtn{
+        border-bottom: solid white 1px;
+        border-top: solid white 1px;
+        border-left: solid white 1px;
+        width: 70px;
+        height: 38px;
+        margin-left: 107px;
+        font-size: 12px;
+        padding-left: 7px;
+    }
+    .rightbar{
+        display: flex;
+        flex-direction: column;
+        margin-top: 55px;
+    }
+    .cn{
+        color: white;
+        display: flex;
+        margin-left:33px ;
+        margin-top: 11px;
+        font-size:9px;
+    }
+    .na4{
+        background: #3daa3d;
+        width: 46px;
+        height: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .yzn{
+        margin-left: 7px;
+        width: 46px;
+        height: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,31 @@
+body{
+    background: gray;
+}
+.lyatori{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    border: solid black 2px;
+    border-radius: 5px;
+    padding: 2px;
+}
+.c{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    margin-left: -300px;
+    margin-top: -300px;
+}
+.div{
+    background-color: rgb(216, 216, 216);
+    border-radius: 20px;
+    border: 1px solid black;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2) inset;
+}
