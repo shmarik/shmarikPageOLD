@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <title>ТЕСТ</title>
+</head>
+
+<body>
+  <!--! логин меню (по дефолту скрыто) -->
+  <div class="login-cont">
+    <div class="logIn">
+      <h2>LOGIN</h2>
+      <div class="inp-box">
+        <input class="input"><label for="">MAIL</label>
+      </div>
+      <div class="inp-box">
+        <input class="input"><label for="">PASSWORD</label>
+      </div>
+      <button class="lgnBtn">Log In</button>
+      <span class=close></span>
+    </div>
+  </div>
+  <!--! Cоздал контейнер контент-->
+  <div class="content">
+    <!--! header для десктопа -->
+    <header class="header-for-pc">
+
+      <div class="nav-menu">
+        <div class="logo"><img src="../../images/logo.png" alt=""></div>
+        <div class="nav-buttons">
+          <div class="but"><a href="../../index.html">ДОМОЙ</a></div>
+          <div class="but"><a href="../../pages/uprajhneniya/upr.html">УПРАЖНЕНИЯ</a></div>
+          <div class="but"><a href="../../pages/video/vid.html">ПИТАНИЕ</a></div>
+          <div class="but"><a href="../../pages/test/testpage.html">ТЕСТ</a></div>
+          <div class="log-in" onclick="createLogInMenu()">ВОЙТИ</div>
+        </div>
+      </div>
+      <!--! header для телефонов -->
+    </header>
+    <header class="header-for-phone">
+      <div class="logo"><img src="../../images/logo.png" alt="" class="r"></div>
+      <div class="burger-nav-and-burger">
+        <ul class="burger-nav">
+          <li><a href="../../index.html" class="nav-el"><img src="../../images/home.png" alt="" class="but-ico">
+              ДОМОЙ</a></li>
+          <li><a href="../../pages/uprajhneniya/upr.html" class="nav-el"><img src="../../images/upr.png" alt=""
+                class="but-ico">УПРАЖНЕНИЯ</a></li>
+          <li><a href="../../pages/video/vid.html" class="nav-el"><img src="../../images/video.png" alt=""
+                class="but-ico">ПИТАНИЕ</a></li>
+          <li><a href="../../pages/test/testpage.html" class="nav-el"> <img src="../../images/test.png" alt=""
+                class="but-ico"> ТЕСТ</a></li>
+        </ul>
+        <div class="log-in unselectable" onclick="createLogInMenu()">ВОЙТИ</div>
+      </div>
+    </header>
+
+    <main style="align-items: center;" >
+      <div class="question-block">
+        <div class="question">Какие продукты являются источниками белка?</div>
+        <div class="anwse-cont "><input type="radio" name="1" class="test-inp" onclick="tap(0, 1)"><p class="anwser">Яблоки и бананы</p></div>
+        <div class="anwse-cont"><input type="radio" name="1" class="test-inp" onclick="tap(0, 2)"><p class="anwser">Картофель и макароны</p></div>
+        <div class="anwse-cont"><input type="radio" name="1" class="test-inp" onclick="tap(0, 3)"><p class="anwser">Рыба и мясо</p></div>
+        <div class="anwse-cont"><input type="radio" name="1" class="test-inp" onclick="tap(0, 4)"><p class="anwser">Чипсы и шоколад</p></div>
+      </div>
+      <div class="question-block">
+        <div class="question">Какой вид физической активности является наиболее полезным для сердечно-сосудистой системы?</div>
+        <div class="anwse-cont"><input type="radio" name="2" class="test-inp" onclick="tap(1, 1)"><p class="anwser">Езда на велосипеде</p></div>
+        <div class="anwse-cont"><input type="radio" name="2" class="test-inp" onclick="tap(1, 2)"><p class="anwser">Ходьба на свежем воздухе</p></div>
+        <div class="anwse-cont"><input type="radio" name="2" class="test-inp" onclick="tap(1, 3)"><p class="anwser">Плавание</p></div>
+        <div class="anwse-cont"><input type="radio" name="2" class="test-inp" onclick="tap(1, 4)"><p class="anwser">Йога</p></div>
+      </div>
+      <div class="question-block">
+        <div class="question">Какую роль играет вода в организме?</div>
+        <div class="anwse-cont"><input type="radio" name="3" class="test-inp" onclick="tap(2, 1)"><p class="anwser">Необходима для роста волос</p></div>
+        <div class="anwse-cont"><input type="radio" name="3" class="test-inp" onclick="tap(2, 2)"><p class="anwser">Помогает уменьшить риск заболеваний сердца</p></div>
+        <div class="anwse-cont"><input type="radio" name="3" class="test-inp" onclick="tap(2, 3)"><p class="anwser">Поддерживает работу почек и кишечника</p></div>
+        <div class="anwse-cont"><input type="radio" name="3" class="test-inp" onclick="tap(2, 4)"><p class="anwser">Влияет на цвет кожи</p></div>
+      </div>
+      <div class="question-block">
+        <div class="question">Какие пищевые продукты рекомендуется употреблять для поддержания здоровья костей?</div>
+        <div class="anwse-cont"><input type="radio" name="4" class="test-inp" onclick="tap(3, 1)"><p class="anwser">Хлеб и выпечка</p></div>
+        <div class="anwse-cont"><input type="radio" name="4" class="test-inp" onclick="tap(3, 2)"><p class="anwser">Молочные продукты и зеленые овощи</p></div>
+        <div class="anwse-cont"><input type="radio" name="4" class="test-inp" onclick="tap(3, 3)"><p class="anwser">Конфеты и шоколад</p></div>
+        <div class="anwse-cont"><input type="radio" name="4" class="test-inp" onclick="tap(3, 4)"><p class="anwser">Картофель и макароны</p></div>
+      </div>
+      <div class="question-block">
+        <div class="question">Какие факторы могут повысить риск развития рака?</div>
+        <div class="anwse-cont"><input type="radio" name="5" class="test-inp" onclick="tap(4, 1)"><p class="anwser">Злоупотребление алкоголем и курение</p></div>
+        <div class="anwse-cont"><input type="radio" name="5" class="test-inp" onclick="tap(4, 2)"><p class="anwser">Употребление молочных продуктов</p></div>
+        <div class="anwse-cont"><input type="radio" name="5" class="test-inp" onclick="tap(4, 3)"><p class="anwser">Ежедневное употребление фруктов и овощей</p></div>
+        <div class="anwse-cont"><input type="radio" name="5" class="test-inp" onclick="tap(4, 4)"><p class="anwser">Регулярные занятия спортом</p></div>
+      </div>
+      <div class="result"></div>
+      <div class="coment result"></div>
+      <button onclick="n()" class="res-but">Подвести итоги</button>
+    </main>
+  </div>
+  <script src="../../script.js"></script>
+
+  <script>
+    let result = document.querySelector(".result")
+    let coment = document.querySelector(".coment")
+    let correct = [3, 3, 3, 2 ,1]
+    let input = [0, 0, 0, 0, 0]
+    let sum = 0
+    function tap(x, y) {
+      input.splice(x, 1, y)
+      console.log(input);
+    }
+    function n() {
+      sum = 0
+      for (i = 0; i < correct.length; i++) {
+        if (input[i] == correct[i]) {
+          sum += 1
+        }
+      }
+      result.innerHTML = `Ваш результат: ${sum} из 5`
+      if(sum == 1){
+        coment.innerHTML = `Cлабенько...`
+      }
+      else if(sum == 2){
+        coment.innerHTML = `Ну... норм`
+      }
+      else if(sum == 3){
+        coment.innerHTML = `3 из 5 неплохо`
+      }
+      else if(sum == 4){
+        coment.innerHTML = `Хорош`
+      }
+      else if(sum == 5){
+        coment.innerHTML = `Отлично`
+      }
+      else if(sum == 0){
+        coment.innerHTML = `(((`
+      }
+    } 
+  </script>
+</body>
+
+</html>
