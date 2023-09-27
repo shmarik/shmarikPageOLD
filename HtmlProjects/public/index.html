@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Docxtemplater Example</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.40/moment-timezone-with-data-10-year-range.min.js"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="max-w-2xl bg-white shadow-md rounded m-8 px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
+    <h2 class="text-lg font-semibold mb-4">Генератор Калаендарно-Тематического планирования version 0.0.2</h2>
+
+    <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="name-input">
+        ФИО Педагога:
+      </label>
+      <input
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        type="text" id="name-input" name="name" placeholder="например, Иванов Иван Иванович">
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="fio">
+        Какой Квантум:
+      </label>
+      <input
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="fio" type="text" placeholder="например, IT-Квантум">
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="fio">
+        Какой Модуль: 
+      </label>
+      <input
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="fio" type="text" placeholder="например, Углубленный">
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="fio">
+        Какая группа:
+      </label>
+      <input
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="fio" type="text" placeholder="например, IT-10">
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="fio">
+        Название рабочей программы:
+      </label>
+      <input
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="fio" type="text" placeholder="например, Основы WEB-разработки">
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="fio">
+       Укажите год: 
+      </label>
+      <input
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="fio" type="text" placeholder="например, 23">
+    </div>
+
+
+    <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="quantum">
+        Выберите год на начало обучения:
+      </label>
+      <select
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="quantum">
+        <option>2022</option>
+        <option>2023</option>
+        <option>2024</option>
+      </select>
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="quantum">
+        Выберите год на конец обучения:
+      </label>
+      <select
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="quantum">
+        <option>2023</option>
+        <option>2024</option>
+        <option>2025</option>
+      </select>
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="quantum">
+        Выберите начальный месяц: 
+      </label>
+      <select
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="quantum">
+        <option value="1">Январь</option>
+        <option value="2">Февраль</option>
+        <option value="3">Март</option>
+        <option value="4">Апрель</option>
+        <option value="5">Май</option>
+        <option value="6">Июнь</option>
+        <option value="7">Июль</option>
+        <option value="8">Август</option>
+        <option value="9">Сентябрь</option>
+        <option value="10">Октябрь</option>
+        <option value="11">Ноябрь</option>
+        <option value="12">Декабрь</option>
+      </select>
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="quantum">
+        Выберите конечный месяц:
+      </label>
+      <select
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="quantum">
+        <option value="1">Январь</option>
+        <option value="2">Февраль</option>
+        <option value="3">Март</option>
+        <option value="4">Апрель</option>
+        <option value="5">Май</option>
+        <option value="6">Июнь</option>
+        <option value="7">Июль</option>
+        <option value="8">Август</option>
+        <option value="9">Сентябрь</option>
+        <option value="10">Октябрь</option>
+        <option value="11">Ноябрь</option>
+        <option value="12">Декабрь</option>
+      </select>
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="fio">
+      Выберите начальное число:
+      </label>
+      <input
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="fio" type="text" placeholder="например, 2">
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="fio">
+      Укажите количество часов:
+      </label>
+      <input
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="fio" type="text" placeholder="например, 72">
+    </div>
+
+    <div class="w-full max-w-sm mx-auto">
+      <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <h2 class="text-xl font-bold mb-4">Выберите дни занятий:</h2>
+        <div class="flex flex-wrap items-start">
+          <div class="w-full md:w-1/2 lg:w-1/3">
+            <label class="inline-flex items-center mt-3">
+              <input type="checkbox" class="form-checkbox h-5 w-5 text-green-500" checked>
+              <span class="ml-2 text-gray-700">Понедельник</span>
+            </label>
+            <label class="inline-flex items-center mt-3">
+              <input type="checkbox" class="form-checkbox h-5 w-5 text-green-500" checked>
+              <span class="ml-2 text-gray-700">Вторник</span>
+            </label>
+            <label class="inline-flex items-center mt-3">
+              <input type="checkbox" class="form-checkbox h-5 w-5 text-green-500">
+              <span class="ml-2 text-gray-700">Среда</span>
+            </label>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3">
+            <label class="inline-flex items-center mt-3">
+              <input type="checkbox" class="form-checkbox h-5 w-5 text-green-500">
+              <span class="ml-2 text-gray-700">Четверг</span>
+            </label>
+            <label class="inline-flex items-center mt-3">
+              <input type="checkbox" class="form-checkbox h-5 w-5 text-green-500">
+              <span class="ml-2 text-gray-700">Пятница</span>
+            </label>
+            <label class="inline-flex items-center mt-3">
+              <input type="checkbox" class="form-checkbox h-5 w-5 text-green-500" checked>
+              <span class="ml-2 text-gray-700">Суббота</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flex items-center justify-between mb-5">
+      <button
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        type="button">
+        Добавить
+      </button>
+    </div>
+
+    <div class="flex">
+
+      <input type="checkbox" class="form-checkbox h-5 w-5 text-gray-600" checked>
+      <label class="ml-2 text-gray-700" for="remember">
+        Оставаться в системе
+      </label>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <form id="input-form">
+    <label for="name-input">ФИО Педагога:</label>
+    <input type="text" id="name-input" name="name"><br><br>
+
+    <label for="name-input">Какой Квантум:</label>
+    <input type="text" id="name-input" name="kvant_name"><br><br>
+
+    <label for="name-input">Какой Модуль:</label>
+    <input type="text" id="name-input" name="module"><br><br>
+
+    <label for="name-input">Какая группа:</label>
+    <input type="text" id="name-input" name="group"><br><br>
+
+    <label for="name-input">Название рабочей программы:</label>
+    <input type="text" id="name-input" name="doc_name"><br><br>
+
+    <label for="age-input">Какой год:</label>
+    <input type="number" id="age-input" name="year"><br><br>
+
+
+    <div class="class-card">
+
+      <label for="start-year">Выберите год на начало обучения:</label>
+      <select id="start-year" name="start-year">
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+      </select>
+      <br>
+
+      <label for="end-year">Выберите год на конец обучения:</label>
+      <select id="end-year" name="end-year">
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2024">2025</option>
+      </select>
+      <br>
+
+      <label for="start-month">Выберите начальный месяц:</label>
+      <select id="start-month" name="start-month">
+        <option value="1">Январь</option>
+        <option value="2">Февраль</option>
+        <option value="3">Март</option>
+        <option value="4">Апрель</option>
+        <option value="5">Май</option>
+        <option value="6">Июнь</option>
+        <option value="7">Июль</option>
+        <option value="8">Август</option>
+        <option value="9">Сентябрь</option>
+        <option value="10">Октябрь</option>
+        <option value="11">Ноябрь</option>
+        <option value="12">Декабрь</option>
+      </select>
+      <br>
+      <label for="end-month">Выберите конечный месяц:</label>
+      <select id="end-month" name="end-month">
+        <option value="1">Январь</option>
+        <option value="2">Февраль</option>
+        <option value="3">Март</option>
+        <option value="4">Апрель</option>
+        <option value="5">Май</option>
+        <option value="6">Июнь</option>
+        <option value="7">Июль</option>
+        <option value="8">Август</option>
+        <option value="9">Сентябрь</option>
+        <option value="10">Октябрь</option>
+        <option value="11">Ноябрь</option>
+        <option value="12">Декабрь</option>
+      </select>
+      <br>
+      <label for="start-day">Выберите начальное число:</label>
+      <input type="number" id="start-day" name="start-day" min="1" max="31">
+      <br>
+      <label for="hours">Часы</label>
+      <input type="number" id="hours" name="hours">
+      <br>
+
+      <div class="select-days">
+        <label for="days">Выберите дни недели:</label><br>
+        <input type="checkbox" id="days" name="days[]" value="1"><label for="days">Понедельник</label>
+        <input type="checkbox" id="days" name="days[]" value="2"><label for="days">Вторник</label>
+        <input type="checkbox" id="days" name="days[]" value="3"><label for="days">Среда</label>
+        <input type="checkbox" id="days" name="days[]" value="4"><label for="days">Четверг</label>
+        <input type="checkbox" id="days" name="days[]" value="5"><label for="days">Пятница</label>
+        <input type="checkbox" id="days" name="days[]" value="6"><label for="days">Суббота</label>
+        <input type="checkbox" id="days" name="days[]" value="0"><label for="days">Воскресенье</label>
+      </div>
+
+      <br>
+    </div>
+    <hr>
+
+
+    <div id="output">
+
+      <a href="#" onclick="generateDates()">👉 Создать даты</a>
+      <table>
+        <thead>
+          <tr>
+            <th>Правильное расписание с учетом выходных дней</th>
+          </tr>
+        </thead>
+        <tbody id="dates-table-body">
+        </tbody>
+      </table>
+    </div>
+
+    <div id="input-fields"></div>
+
+
+    <button type="submit" id="submit-btn">Сделать хорошо</button>
+  </form>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
